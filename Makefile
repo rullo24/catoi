@@ -5,7 +5,7 @@ CFLAGS = -Wall -Werror
 # Source and library files
 LIB_SRC = catoi.c
 OBJ = catoi.o
-LIB_OUT_NAME = libcatoi
+LIB_OUT_NAME = catoi
 
 # Check if running on Windows or Linux
 ifeq ($(OS),Windows_NT)
