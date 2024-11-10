@@ -5,7 +5,7 @@ CFLAGS = -Wall -Werror
 # Source and library files
 LIB_SRC = catoi.c
 OBJ = catoi.o
-LIB_OUT_NAME = catoi
+LIB_OUT_NAME = libcatoi
 
 # Check if running on Windows or Linux
 ifeq ($(OS),Windows_NT)
@@ -22,7 +22,7 @@ LIB_OUT = $(LIB_OUT_NAME)$(LIB_EXT)
 # Build the static library
 $(LIB_OUT): $(OBJ)
 # creating an object file
-	$(CC) $(CFLAGS) -c $(LIB_SRC) 
+	$(CC) $(CFLAGS) -c $(LIB_SRC)
 # creating the static lib
 	ar rcs $(LIB_OUT) $(OBJ) 
 # removing the object file after static lib creation

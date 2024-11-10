@@ -1,8 +1,4 @@
-// std C includes
-#include <limits.h>
-#include <math.h>
-#include <string.h>
-#include <stdint.h>
+#include "catoi.h" // including header
 
 // MAX_INT >= return >= -MAX_INT --> if fail, p_err_res deref will be set to -1
 int catoi(const char *str_to_conv, size_t max_str_len, int* p_err_res) {
